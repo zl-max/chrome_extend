@@ -1,0 +1,23 @@
+{
+	"name":"zl-extend",
+	"version":"1.0.0",
+	
+	"manifest_version":2,
+	"description":"欢迎使用外挂小程序",
+	"browser_action":{
+		"default_icon":"1.png",
+		"default_tittle":"zl-extend",
+		"default_popup":"popup.html"
+	},
+	"content_scripts":[{
+		"matches":["https://www.baidu.com/*"],
+		"js":["zl.js"]
+	}],
+	"web_accessible_resources":[
+		"1.png",
+		"popup.js",
+		"zl.js"
+	]
+	
+	
+}
